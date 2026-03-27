@@ -1,4 +1,4 @@
-#Personal CV Website
+Personal CV Website
 
 A responsive CV website built with HTML, CSS, and JavaScript, designed to showcase your personal information, skills, education, and contact details in a clean and professional layout. Fully optimized for both desktop and mobile devices with dark mode support and smooth scrolling.
 
@@ -16,9 +16,15 @@ Technologies Used
 Features
 
 ✅ Fully responsive layout for all screen sizes
+
 ✅ Modern, clean, and professional design
+
 ✅ Dark mode toggle
+
 ✅ Smooth scroll animations
+
 ✅ CV download option
+
 ✅ Contact form
+
 ✅ Social media links
