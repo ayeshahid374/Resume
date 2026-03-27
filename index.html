@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayesha Shahid | CV</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="light">
+
+  <div id="cv" class="resume-container">
+
+    <aside class="sidebar">
+  <div class="profile-pic">
+    <img src="images/profile.jpg" alt="Profile Picture">
+  </div>
+
+  <div class="skills-contact">
+
+    <div class="skills">
+      <h3>SKILLS</h3>
+      <ul>
+        <li>C / C++ / Python</li>
+        <li>JavaScript / React / Node.js</li>
+        <li>HTML / CSS / Django / Flutter</li>
+        <li>SQL / GitHub</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h3>CONTACT</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> ayeshashahid374@gmail.com</li>
+        <li><i class="fas fa-phone"></i> +92 310 4077025</li>
+        <li>
+          <i class="fab fa-linkedin"></i>
+          <a href="https://linkedin.com/in/ayesha-shahid-034839365" target="_blank">
+            Linkedin_ayeshashahid
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="controls sidebar-controls">
+  <button onclick="toggleMode()">
+    <i class="fas fa-moon"></i> Theme Change
+  </button>
+  <button onclick="downloadCV()">
+    <i class="fas fa-download"></i> Download CV
+  </button>
+</div>
+
+  </div>
+</aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="header">
+        <h1>Ayesha Shahid</h1>
+        <p class="subtitle">Computer Science Student</p>
+      </div>
+
+      <section class="about-me">
+        <h2>ABOUT ME</h2>
+        <p>
+          Computer Science undergraduate with a strong interest in software development, 
+          problem solving, and building clean, user-focused applications. 
+          Passionate about learning new technologies and applying them in real-world projects.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>EDUCATION</h2>
+        <ul>
+          <li>
+            <strong>National University of Computer and Emerging Sciences</strong><br>
+            BS Computer Science (2023 – Present)
+          </li>
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>PROJECTS & EXPERIENCE</h2>
+        <ul>
+          <li>
+            <strong>Neighborhood Safety & Complaint App</strong>
+            <span class="project-desc">Flutter app with Django REST APIs and SQLite for community safety.</span>
+          </li>
+          <li>
+            <strong>Online Library Management System</strong>
+            <span class="project-desc">Full-stack web app with Node.js, SQL Server, and React.</span>
+          </li>
+          <li>
+            <strong>Solitaire Game</strong>
+            <span class="project-desc">C++ card game using efficient data structures.</span>
+          </li>
+          <li>
+            <strong>Customer Service Portal</strong>
+            <span class="project-desc">C++ portal managing large-scale customer data.</span>
+          </li>
+          <li>
+            <strong>Social Media Application (Facebook Clone)</strong>
+            <span class="project-desc">Facebook clone app with OOP, login, posts, and friend requests.</span>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark");
+      document.body.classList.toggle("light");
+    }
+
+    function downloadCV() {
+      window.print(); 
+    }
+
+    
+    window.addEventListener("DOMContentLoaded", () => {
+
+      // Skills
+      const skills = document.querySelectorAll(".skills ul li");
+      skills.forEach((item, index) => {
+        item.classList.add("animate");
+        item.style.setProperty("--delay", `${0.5 + index * 0.4}s`);
+        item.classList.add("animate-delay");
+      });
+
+      // Education
+      const education = document.querySelectorAll(".education ul li");
+      education.forEach((item, index) => {
+        item.classList.add("animate");
+        item.style.setProperty("--delay", `${1.5 + index * 0.4}s`);
+        item.classList.add("animate-delay");
+      });
+
+      // Projects
+      const projects = document.querySelectorAll(".experience ul li");
+      projects.forEach((item, index) => {
+        item.classList.add("animate");
+        item.style.setProperty("--delay", `${2.5 + index * 0.5}s`);
+        item.classList.add("animate-delay");
+      });
+
+      // Header
+      const header = document.querySelector(".header h1");
+      const subtitle = document.querySelector(".header p.subtitle");
+      header.classList.add("animate");
+      header.style.setProperty("--delay", "0s");
+      header.classList.add("animate-delay");
+
+      subtitle.classList.add("animate");
+      subtitle.style.setProperty("--delay", "0.3s");
+      subtitle.classList.add("animate-delay");
+
+    });
+  </script>
+
+</body>
+</html>
